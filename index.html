@@ -102,7 +102,7 @@
                 <h2>Bahan Utama:</h2>
                 <p class="card-text">1. 10 buah tahu goreng</p>
                 <p class="card-text">2. 1 liter air</p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#moreContent" aria-expanded="false" aria-controls="moreContent">Selengkapnya</button>
+                <button class="btn btn-primary" type="button" id="toggleButton" onclick="showMore()">Selengkapnya</button>
                 <div class="collapse" id="moreContent">
                   <p class="card-text">3. 1 sdt kaldu bubuk</p>
                   <p class="card-text">4. 3 sdm tepung kanji</p>
@@ -131,10 +131,24 @@
                   <p class="card-text">1. Kalau sulit mendapatkan tahu goreng, kamu bisa buat sendiri di rumah. Caranya siapkan tahu putih atau kuning lalu goreng sampai berkulit.</p>
                   <p class="card-text">2. Pastikan adonan tepung tidak terlalu encer atau kering. Ini supaya adonan bisa dilekatkan dengan permukaan tahu.</p>
                   <p class="card-text">3. Goreng tahu aci di minyak yang terlalu panas. Sebab, tahap ini dapat meminimalisir meletusnya tahu aci ketika digoreng.</p>
+                  <button class="btn btn-primary" type="button" id="collapseButton" onclick="showLess()">Persingkat</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <script>
+            function showMore() {
+              document.getElementById("moreContent").classList.add("show");
+              document.getElementById("toggleButton").style.display = "none";
+            }
+
+            function showLess() {
+              document.getElementById("moreContent").classList.remove("show");
+              document.getElementById("toggleButton").style.display = "inline";
+            }
+          </script>
+          
           <div class="col-md-4 mb-3">
             <div class="card">
               <img src="img/skill/2.png" class="card-img-top" alt="Skill2" />
