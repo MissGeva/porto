@@ -332,7 +332,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form name="Contact-Form">
+<form name="Contact-Form">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
                 <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
@@ -345,7 +345,12 @@
                 <label for="pesan" class="form-label">pesan</label>
                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-info btn-kirim">Kirim</button>
+
+              <button class="btn btn-info btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -396,17 +401,30 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyYAWi7iIeXNgBYAd-OmcCVhMRUNCfptH6GR5_xF5HwMUoQt3uLCdU39pleEHVbGayR/exec";
       const form = document.forms["Contact-Form"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        //ketika tombol summit diklik
+        //jika tombol summit diklik maka tombol summit akan berubah menjadi tombol loading
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+          .then((response) => {
+            //tampilkan tombol summit kembali
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan alert
+            myAlert.classList.remove("d-none");
+            //reset
+            form.reset();
+            console.log("Success!", response);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
