@@ -99,11 +99,11 @@
             <div class="card">
               <img src="img/skill/cireng.png" class="card-img-top" alt="Skill1" />
               <div class="card-body">
-                <h2>Bahan Utama:</h2>
+                <h1>Bahan Utama:</h1>
                 <p class="card-text">1. 10 buah tahu goreng</p>
-                <p class="card-text">2. 1 liter air</p>
-                <button class="btn btn-primary" type="button" id="toggleButton" onclick="showMore()">Selengkapnya</button>
-                <div class="collapse" id="moreContent">
+                <button class="btn btn-primary selengkapnyaButton" type="button" data-target="content1">Selengkapnya</button>
+                <div class="collapse" id="content1">
+                  <p class="card-text">2. 1 liter air</p>
                   <p class="card-text">3. 1 sdt kaldu bubuk</p>
                   <p class="card-text">4. 3 sdm tepung kanji</p>
                   <p class="card-text">5. 200 gram tepung kanji</p>
@@ -112,11 +112,11 @@
                   <p class="card-text">8. 4 siung bawang putih</p>
                   <p class="card-text">9. 4 lembar daun bawang</p>
                   <p class="card-text">10. 300 ml air mendidih</p>
-                  <h2>Bahan Cocolan:</h2>
+                  <h1>Bahan Cocolan:</h1>
                   <p class="card-text">1. 7 biji cabe rawit merah (bisa disesuaikan dengan selera masing-masing)</p>
                   <p class="card-text">2. 2 buah jeruk sambal yang ukuran sedang (bisa disesuaikan dengan selera masing-masing)</p>
                   <p class="card-text">3. 3 sdm kecap manis (bisa disesuaikan dengan selera masing-masing)</p>
-                  <h2>Cara memasaknya:</h2>
+                  <h1>Cara Memasaknya:</h1>
                   <p class="card-text">1. Siapkan tahu goreng ke dalam wadah. Tambahkan 1 liter air dan kaldu bubuk lalu aduk rata. Diamkan selama 10 menit.</p>
                   <p class="card-text">2. Setelah didiamkan selama 10 menit lalu tiriskan tahu kemudian peras sampai kadar airnya berkurang. Sisihkan.</p>
                   <p class="card-text">3. Selanjutnya, belah tahu menjadi dua bagian lalu lumuri dengan tiga sendok makan tepung kanji. Lakukan sampai selesai. Sisihkan.</p>
@@ -127,57 +127,186 @@
                   <p class="card-text">6. Goreng tahu aci di minyak panas menggunakan api sedang sampai matang kering. Tiriskan.</p>
                   <p class="card-text">7. Untuk membuat sambal kecap ulek kasar cabai rawit merah. Masukkan cabai ulek ke dalam wadah lalu tambahkan kecap manis serta air jeruk limau dan diaduk rata.</p>
                   <p class="card-text">8. Tahu cireng siap disajikan bersama sambal kecap.</p>
-                  <h2>Catatan:</h2>
+                  <h1>Catatan:</h1>
                   <p class="card-text">1. Kalau sulit mendapatkan tahu goreng, kamu bisa buat sendiri di rumah. Caranya siapkan tahu putih atau kuning lalu goreng sampai berkulit.</p>
                   <p class="card-text">2. Pastikan adonan tepung tidak terlalu encer atau kering. Ini supaya adonan bisa dilekatkan dengan permukaan tahu.</p>
                   <p class="card-text">3. Goreng tahu aci di minyak yang terlalu panas. Sebab, tahap ini dapat meminimalisir meletusnya tahu aci ketika digoreng.</p>
-                  <button class="btn btn-primary" type="button" id="collapseButton" onclick="showLess()">Persingkat</button>
+                  <p class="card-text">4. sdt (satu sendok teh), sdm (satu sendok makan), ml (mili liter).</p>
+                  <button class="btn btn-primary persingkatButton" type="button" data-target="content1">Persingkat</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <script>
-            function showMore() {
-              document.getElementById("moreContent").classList.add("show");
-              document.getElementById("toggleButton").style.display = "none";
-            }
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/skill/sambal.png" class="card-img-top" alt="Skill2" />
+              <div class="content">
+                <h1>Bahan Utama:</h1>
+                <button class="btn btn-primary selengkapnyaButton" type="button" data-target="content2">Selengkapnya</button>
+                <div class="collapse" id="content2">
+                  <p class="card-text">1. 5 butir telur ayam (rebus dan goreng hingga kecokelatan)</p>
+                  <p class="card-text">2. 5 batang kacang panjang (potong-potong sekitar 3 cm)</p>
+                  <p class="card-text">3. 5 butir tahu putih (potong dadu kecil dan goreng)</p>
+                  <p class="card-text">4. 350 ml minyak goreng</p>
+                  <h1>Bahan Sambal:</h1>
+                  <p class="card-text">1. 10 buah cabai merah besar (buang biji jika ingin tidak terlalu pedas)</p>
+                  <p class="card-text">2. 5 buah cabai rawit merah (tambahkan jika ingin lebih pedas)</p>
+                  <p class="card-text">3. 5 siung bawang merah</p>
+                  <p class="card-text">4. 3 siung bawang putih</p>
+                  <p class="card-text">5. 2 buah tomat merah(ukuran sedang)</p>
+                  <p class="card-text">6. 1 sdt terasi bakar</p>
+                  <p class="card-text">7. 3 iris gula merah (diiris halus)</p>
+                  <p class="card-text">8. 1 sdt garam</p>
+                  <p class="card-text">9. ½ sdt kaldu bubuk (opsional)</p>
+                  <p class="card-text">10. 150 ml air</p>
+                  <p class="card-text">11. 3 sdm minyak goreng (untuk menumis)</p>
+                  <h1>bahan Tambahan:</h1>
+                  <p class="card-text">1. 1 lembar daun salam</p>
+                  <p class="card-text">2. 1 batang serai (digeprek kasar)</p>
+                  <p class="card-text">3. 2 cm lengkuas (digeprek kasar)</p>
+                  <h1>Cara memasaknya:</h1>
+                  <p class="card-text">1. Rebus telur hingga matang, kupas kulitnya, lalu goreng hingga bagian luarnya kecokelatan. Angkat dan sisihkan.</p>
+                  <p class="card-text">2. Potong kacang panjang dan tahu sesuai ukuran yang diinginkan.</p>
+                  <p class="card-text">3. goreng tahu hingga kecokelatan, angkat dan tiriskan.</p>
+                  <p class="card-text">4. Haluskan cabai merah besar, cabai rawit, bawang merah, bawang putih, dan tomat menggunakan blender atau ulekan.</p>
+                  <p class="card-text">5. Panaskan minyak di wajan. Tumis sambal halus hingga harum dan matang.</p>
+                  <p class="card-text">6. Masukkan daun salam, serai, dan lengkuas, lalu aduk rata.</p>
+                  <p class="card-text">7. Tambahkan gula merah, garam, terasi, dan kaldu bubuk. Aduk hingga bumbu merata.</p>
+                  <p class="card-text">8. Tuangkan air, masak hingga sambal sedikit mengental.</p>
+                  <p class="card-text">9. Masukkan kacang panjang dan tahu ke dalam wajan, aduk hingga tercampur dengan sambal. Masak selama 3 sampai 5 menit hingga kacang panjang setengah matang.</p>
+                  <p class="card-text">10. Tambahkan telur yang sudah digoreng, aduk perlahan agar telur tidak hancur. Masak hingga semua bahan meresap dan matang sempurna.</p>
+                  <p class="card-text">11. Angkat dan sajikan telur balado dengan kacang panjang dan tahu di atas piring saji. Hidangan siap dinikmati bersama nasi hangat.</p>
+                  <h1>Catatan:</h1>
+                  <p class="card-text">4. sdt (satu sendok teh), sdm (satu sendok makan), ml (mili liter), cm (centi meter).</p>
+                  <button class="btn btn-primary persingkatButton" type="button" data-target="content2">Persingkat</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            function showLess() {
-              document.getElementById("moreContent").classList.remove("show");
-              document.getElementById("toggleButton").style.display = "inline";
-            }
-          </script>
-          
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/skill/2.png" class="card-img-top" alt="Skill2" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="img/skill/ayam.jpg" class="card-img-top" alt="Skill3" />
+              <div class="content">
+                <h1>Bahan Utama:</h1>
+                <button class="btn btn-primary selengkapnyaButton" type="button" data-target="content3">Selengkapnya</button>
+                <div class="collapse" id="content3">
+                  <p class="card-text">1. 500 gram daging ayam (potong sesuai selera kalian, cuci bersih)</p>
+                  <p class="card-text">2. 3 sdm tempoyak (tempoyak tuh durian yang difermentasi)</p>
+                  <p class="card-text">3. 500 ml air (sesuaikan tingkat kekentalan yang diinginkan)</p>
+                  <h1>Bahan Halus:</h1>
+                  <p class="card-text">1. 6 siung bawang merah</p>
+                  <p class="card-text">2. 4 siung bawang putih</p>
+                  <p class="card-text">3. 4 buah cabai merah besar</p>
+                  <p class="card-text">4. 10 buah cabai rawit merah (sesuaikan tingkat kepedasan)</p>
+                  <p class="card-text">5. 1 ruas kunyit (sekitar 2 cm)</p>
+                  <p class="card-text">6. 1 sdt terasi bakar</p>
+                  <p class="card-text">7. 1 ruas lengkuas (sekitar 3 cm)</p>
+                  <p class="card-text">8. 1 ruas jahe (sekitar 2 cm)</p>
+                  <h1>bahan Tambahan:</h1>
+                  <p class="card-text">1. 2 batang serai (digeprek)</p>
+                  <p class="card-text">2. 2 lembar daun jeruk</p>
+                  <p class="card-text">3. 2 lembar daun salam</p>
+                  <p class="card-text">4. 1 buah asam kandis (atau 2 sdm air asam jawa)</p>
+                  <p class="card-text">5. 1 sdt garam (sesuaikan selera)</p>
+                  <p class="card-text">6. 1 sdt gula merah</p>
+                  <p class="card-text">7. ½ sdt kaldu bubuk (opsional)</p>
+                  <h1>Cara Memasaknya:</h1>
+                  <p class="card-text">1. Siapkan ayam yang sudah dipotong, cuci hingga bersih.</p>
+                  <p class="card-text">2. Lumuri potongan ayam dengan sedikit garam dan perasan jeruk nipis, lalu diamkan selama 10 menit. Bilas dengan air bersih.</p>
+                  <p class="card-text">3. Haluskan bawang merah, bawang putih, cabai merah, cabai rawit, kunyit, jahe, dan lengkuas.</p>
+                  <p class="card-text">4. Panaskan 3 sdm minyak goreng di wajan. Tumis bumbu halus bersama serai, daun jeruk, dan daun salam hingga harum.</p>
+                  <p class="card-text">5. Masukkan potongan ayam ke dalam wajan, aduk hingga ayam berubah warna dan bumbu meresap.</p>
+                  <p class="card-text">6. Masukkan tempoyak ke dalam wajan, aduk hingga merata. Tempoyak akan memberikan rasa khas asam dan aroma durian.</p>
+                  <p class="card-text">7. Tuangkan air ke dalam wajan, tambahkan asam kandis (atau air asam jawa). Masak hingga ayam empuk dan kuah sedikit menyusut.</p>
+                  <p class="card-text">8. Masukkan gula merah, garam, dan kaldu bubuk. Cicipi kuah, sesuaikan rasa sesuai selera.</p>
+                  <p class="card-text">9. Masak hingga bumbu meresap dan kuah mengental. Angkat dan sajikan dalam mangkuk.</p>
+                  <h1>Catatan:</h1>
+                  <p class="card-text">1. Jika tempoyak terlalu asam, tambahkan sedikit gula untuk menyeimbangkan rasa.</p>
+                  <p class="card-text">2. Sesuaikan jumlah cabai rawit dengan selera kepedasan.</p>
+                  <p class="card-text">3. Jika tidak ada tempoyak, Anda bisa menggunakan sedikit santan untuk rasa gurih, meskipun rasa aslinya akan berbeda.</p>
+                  <p class="card-text">4. sdt (satu sendok teh), sdm (satu sendok makan), ml (mili liter), cm (centi meter).</p>
+                  <button class="btn btn-primary persingkatButton" type="button" data-target="content3">Persingkat</button>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/skill/3.jpg" class="card-img-top" alt="Skill3" />
+              <img src="img/skill/jln.jpg" class="card-img-top" alt="Skill4" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h1>Langkah-langkah Pengambilan Foto Tersebut:</h1>
+                <button class="btn btn-primary selengkapnyaButton" type="button" data-target="content4">Selengkapnya</button>
+                <div class="collapse" id="content4">
+                  <p class="card-text">1. Pastikan lensa kamera bersih dari debu atau sidik jari agar hasil foto tajam.</p>
+                  <p class="card-text">2. Masuk ke pengaturan kamera dan aktifkan fitur "Grid" untuk membantu menyusun komposisi.</p>
+                  <p class="card-text">3. Siapkan tripod kecil atau cari permukaan stabil untuk menaruh ponsel, terutama jika ingin menggunakan shutter speed lambat.</p>
+                  <p class="card-text">4. Pilih mode malam pada aplikasi kamera untuk hasil optimal di senja atau malam.</p>
+                  <p class="card-text">5. Atur kompisisi, seperti pegang atau letakkan kamera atau hp sesuai dengan posisi objek yang ingin difoto, bisa menambahkan objek lain disekitarnya untuk menambah kedalaman dan dimensi pada foto.</p>
+                  <p class="card-text">6. Pastikan kamera tetap menjaga fokus pada objek yang diinginkan</p>
+                  <p class="card-text">7. Sentuh bagian terang pada layar untuk mengunci eksposur agar langit tidak terlalu terang.</p>
+                  <p class="card-text">8. Ambil beberapa foto dengan pengaturan berbeda untuk memilih hasil terbaik.</p>
+                  <p class="card-text">9. Jika ponsel tidak menggunakan tripod, aktifkan timer untuk mengurangi goyangan saat memotret.</p>
+                  <h1>Jika Ingin Menggunakan Mode Pro untuk Kontrol Manual:</h1>
+                  <p class="card-text">1. Gunakan mode ini setelah mengatur mode malam(langkah 4 diatas)</p>
+                  <p class="card-text">2. Atur ke 100-200 untuk mengurangi noise.</p>
+                  <p class="card-text">3. Pilih 1/100 hingga 1/250 detik (disesuaikan dengan pencahayaan).</p>
+                  <p class="card-text">4. Atur ke "Cloudy" untuk menonjolkan warna langit.</p>
+                  <p class="card-text">5. Fokuskan kamera pada objek utama atau pada langit untuk menangkap detail maksimal.</p>
+                  <h1>Langkah-langkah Mengedit Foto:</h1>
+                  <p class="card-text">1. Gunakan aplikasi bawaan atau Snapseed / Lightroom Mobile untuk menyempurnakan hasil.</p>
+                  <p class="card-text">2. Tingkatkan sedikit saturasi untuk memperkuat warna oranye dan biru.</p>
+                  <p class="card-text">3. Kurangi highlights untuk menonjolkan detail langit.</p>
+                  <p class="card-text">4. Tambahkan shadows untuk mengungkapkan elemen gelap.</p>
+                  <p class="card-text">5. Tambahkan kontras agar batas terang dan gelap lebih tajam.</p>
+                  <p class="card-text">6. Pertegas detail dengan fitur seperti "Structure" atau "Clarity".</p>
+                  <p class="card-text">7. impan foto dengan kualitas tinggi untuk menjaga detail.</p>
+                  <h1>Catatan:</h1>
+                  <p class="card-text">1. Lakukan pemotretan sekitar pukul 5.30-6.30 pagi atau 5.00-6.30 sore.</p>
+                  <p class="card-text">2. Gunakan filter dengan efek hangat (warm tone) bawaan kamera Oppo Reno F4 untuk memperkuat suasana foto.</p>
+                  <button class="btn btn-primary persingkatButton" type="button" data-target="content4">Persingkat</button>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/skill/4.png" class="card-img-top" alt="Skill4" />
+              <img src="img/skill/lgt.jpg" class="card-img-top" alt="Skill5" />
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/skill/5.avif" class="card-img-top" alt="Skill5" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h1>Langkah-langkah Pengambilan Foto Tersebut:</h1>
+                <button class="btn btn-primary selengkapnyaButton" type="button" data-target="content5">Selengkapnya</button>
+                <div class="collapse" id="content5">
+                  <p class="card-text">1. Pastikan lensa kamera bersih dari debu atau sidik jari agar hasil foto tajam.</p>
+                  <p class="card-text">2. Masuk ke pengaturan kamera dan aktifkan fitur "Grid" untuk membantu menyusun komposisi.</p>
+                  <p class="card-text">3. Siapkan tripod kecil atau cari permukaan stabil untuk menaruh ponsel, terutama jika ingin menggunakan shutter speed lambat.</p>
+                  <p class="card-text">4. Pilih mode malam pada aplikasi kamera untuk hasil optimal di senja atau malam.</p>
+                  <p class="card-text">5. Atur kompisisi, seperti pegang atau letakkan kamera atau hp sesuai dengan posisi objek yang ingin difoto, bisa menambahkan objek lain disekitarnya untuk menambah kedalaman dan dimensi pada foto.</p>
+                  <p class="card-text">6. Pastikan kamera tetap menjaga fokus pada objek yang diinginkan</p>
+                  <p class="card-text">7. Sentuh bagian terang pada layar untuk mengunci eksposur agar langit tidak terlalu terang.</p>
+                  <p class="card-text">8. Ambil beberapa foto dengan pengaturan berbeda untuk memilih hasil terbaik.</p>
+                  <p class="card-text">9. Jika ponsel tidak menggunakan tripod, aktifkan timer untuk mengurangi goyangan saat memotret.</p>
+                  <h1>Jika Ingin Menggunakan Mode Pro untuk Kontrol Manual:</h1>
+                  <p class="card-text">1. Gunakan mode ini setelah mengatur mode malam(langkah 4 diatas)</p>
+                  <p class="card-text">2. Atur ke 100-200 untuk mengurangi noise.</p>
+                  <p class="card-text">3. Pilih 1/100 hingga 1/250 detik (disesuaikan dengan pencahayaan).</p>
+                  <p class="card-text">4. Atur ke "Cloudy" untuk menonjolkan warna langit.</p>
+                  <p class="card-text">5. Fokuskan kamera pada objek utama atau pada langit untuk menangkap detail maksimal.</p>
+                  <h1>Langkah-langkah Mengedit Foto:</h1>
+                  <p class="card-text">1. Gunakan aplikasi bawaan atau Snapseed / Lightroom Mobile untuk menyempurnakan hasil.</p>
+                  <p class="card-text">2. Tingkatkan sedikit saturasi untuk memperkuat warna oranye dan biru.</p>
+                  <p class="card-text">3. Kurangi highlights untuk menonjolkan detail langit.</p>
+                  <p class="card-text">4. Tambahkan shadows untuk mengungkapkan elemen gelap.</p>
+                  <p class="card-text">5. Tambahkan kontras agar batas terang dan gelap lebih tajam.</p>
+                  <p class="card-text">6. Pertegas detail dengan fitur seperti "Structure" atau "Clarity".</p>
+                  <p class="card-text">7. impan foto dengan kualitas tinggi untuk menjaga detail.</p>
+                  <h1>Catatan:</h1>
+                  <p class="card-text">1. Lakukan pemotretan sekitar pukul 5.30-6.30 pagi atau 5.00-6.30 sore.</p>
+                  <p class="card-text">2. Gunakan filter dengan efek hangat (warm tone) bawaan kamera Oppo Reno F4 untuk memperkuat suasana foto.</p>
+                  <button class="btn btn-primary persingkatButton" type="button" data-target="content5">Persingkat</button>
+                </div>
               </div>
             </div>
           </div>
@@ -236,6 +365,35 @@
       <p><i class="bi bi-c-circle text-primary"></i>Created By <a href="https://www.instagram.com/p.gevani01/" class="text-primary fw-bold">Putri Geovani</a></p>
     </footer>
     <!-- end footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      // Menangani tombol Selengkapnya
+      document.querySelectorAll(".selengkapnyaButton").forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId = button.getAttribute("data-target"); // Ambil ID target
+          const targetContent = document.getElementById(targetId);
+
+          // Tampilkan konten
+          targetContent.classList.add("show");
+          // Hilangkan tombol Selengkapnya
+          button.style.display = "none";
+        });
+      });
+
+      // Menangani tombol Persingkat
+      document.querySelectorAll(".persingkatButton").forEach((button) => {
+        button.addEventListener("click", () => {
+          const targetId = button.getAttribute("data-target"); // Ambil ID target
+          const targetContent = document.getElementById(targetId);
+
+          // Sembunyikan konten
+          targetContent.classList.remove("show");
+          // Tampilkan kembali tombol Selengkapnya
+          const selengkapnyaButton = document.querySelector(`.selengkapnyaButton[data-target="${targetId}"]`);
+          selengkapnyaButton.style.display = "inline-block";
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
